@@ -1,7 +1,7 @@
 import { writeFile } from 'node:fs/promises';
 import type { Year } from '../src/worker';
 
-export const START_DATE = new Date('2012-09-07T04:00:00.000Z');
+export const START_DATE = new Date('2023-01-01T04:00:00.000Z');
 
 export type Contribution = {
   contributionCount: number;
@@ -53,7 +53,7 @@ export async function request(date: { from?: Date; to?: Date }) {
 		}
 		`,
     variables: {
-      username: 'terkelg',
+      username: 'vxyux',
       from: date.from?.toISOString(),
       to: date.to?.toISOString()
     }
@@ -62,7 +62,7 @@ export async function request(date: { from?: Date; to?: Date }) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'User-Agent': 'terkelg/readme',
+      'User-Agent': 'vxyux/readme',
       Authorization: `bearer ${process.env.API_TOKEN_GITHUB}`
     },
     body: JSON.stringify(body)

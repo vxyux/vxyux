@@ -2,7 +2,7 @@ import type { Year } from './worker';
 
 const BP_MEDIUM = 550;
 const BP_LARGE = 700;
-const BODY_COPY = `I'm Terkel. A Brooklyn-based internet enthusiast, creative technologist and maker of digital ephemera.`;
+const BODY_COPY = `Greetings, I am vxyux. A student trying to master the art of code, creative generalist and video-editor. Currently learning Javascript technologies.`;
 
 interface Props {
   width?: number;
@@ -34,25 +34,25 @@ const svg = (styles: string, html: string, attributes: Attributes) => {
 
 export const shared = /* css */ `
 	:root {
-		--color-text-light: #255DF6;
-		--color-dot-bg-0-light: #EBEDF0;
-		--color-dot-bg-1-light: #A7BEFB;
-		--color-dot-bg-2-light: #628BF9;
-		--color-dot-bg-3-light: #4071F7;
-		--color-dot-bg-4-light: #255DF6;
+		--color-text-light: #ff0000;
+		--color-dot-bg-0-light: #FDEFEC;
+		--color-dot-bg-1-light: #FFC0B3;
+		--color-dot-bg-2-light: #FF9883;
+		--color-dot-bg-3-light: #FF6C4E;
+		--color-dot-bg-4-light: #FF370E;
 		--color-dot-border-light: rgb(0 0 0 / 0.06);
 
-		--color-text-dark: #255DF6;
-		--color-dot-bg-0-dark: #171B21;
-		--color-dot-bg-1-dark: #152A62;
-		--color-dot-bg-2-dark: #2048B3;
-		--color-dot-bg-3-dark: #1951EB;
-		--color-dot-bg-4-dark: #0048FF;
+		--color-text-dark: #ff0000;
+		--color-dot-bg-0-dark: #FDEFEC;
+		--color-dot-bg-1-dark: #FFC0B3;
+		--color-dot-bg-2-dark: #FF9883;
+		--color-dot-bg-3-dark: #FF6C4E;
+		--color-dot-bg-4-dark: #FF370E;
 		--color-dot-border-dark: rgb(0 0 0 / 0.06);
 
 		/* Initial animation offset... */
 		--default-delay: 1s;
-		--default-duration: 1.55s;
+		--default-duration: 1.6;
 		--default-stagger: 0.1s;
 
 		/* Animation orchestration */
