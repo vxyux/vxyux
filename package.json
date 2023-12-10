@@ -9,7 +9,8 @@
     "format": "prettier --write ./{src,scripts}/*",
     "stats": "ts-node-esm scripts/stats.ts",
     "lint": "prettier --check ./{src,scripts}/*",
-    "types": "tsc --noEmit"
+    "types": "tsc --noEmit",
+    "build": "node --no-warnings=ExperimentalWarning --loader ts-node/esm scripts/stats.ts && npm start"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20231121.0",

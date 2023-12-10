@@ -68,6 +68,7 @@ export async function request(date: { from?: Date; to?: Date }) {
     },
     body: JSON.stringify(body)
   }).then((res) => res.json() as Promise<Response>);
+  console.log(response);
   const calender = response.data.user.contributionsCollection.contributionCalendar;
   const weeks = calender.weeks;
   return { weeks, contributions: calender.totalContributions };

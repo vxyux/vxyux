@@ -1,7 +1,8 @@
 import { writeFile } from 'node:fs/promises';
 import type { Year } from '../src/worker';
+import 'dotenv/config';
 
-export const START_DATE = new Date('2023-01-01T04:00:00.000Z');
+export const START_DATE = new Date('2022-01-01T04:00:00.000Z');
 
 export type Contribution = {
   contributionCount: number;
@@ -67,6 +68,7 @@ export async function request(date: { from?: Date; to?: Date }) {
     },
     body: JSON.stringify(body)
   }).then((res) => res.json() as Promise<Response>);
+  console.log(response);
   const calender = response.data.user.contributionsCollection.contributionCalendar;
   const weeks = calender.weeks;
   return { weeks, contributions: calender.totalContributions };

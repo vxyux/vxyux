@@ -1,9 +1,8 @@
 import { writeFile } from 'node:fs/promises';
 import type { Year } from '../src/worker';
+import 'dotenv/config';
 
-require('dotenv').config();
-
-export const START_DATE = new Date('2023-01-01T04:00:00.000Z');
+export const START_DATE = new Date('2022-01-01T04:00:00.000Z');
 
 export type Contribution = {
   contributionCount: number;
