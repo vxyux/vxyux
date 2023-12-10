@@ -21,11 +21,12 @@
     "strict": true /* Enable all strict type-checking options. */,
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-      "ts-node": {
-        "esm": true
-    },
   "include": [
     "scripts",
     "src"
-  ]
+  ],
+      "ts-node": {
+        // Tell ts-node CLI to install the --loader automatically
+        "esm": true
+    }
 }

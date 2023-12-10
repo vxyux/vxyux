@@ -2,12 +2,11 @@
   "name": "vxyux",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "start": "wrangler dev",
     "deploy": "pnpm stats && wrangler deploy",
     "format": "prettier --write ./{src,scripts}/*",
-    "stats": "ts-node-esm scripts/stats.ts",
+    "stats": "ts-node scripts/stats.ts",
     "lint": "prettier --check ./{src,scripts}/*",
     "types": "tsc --noEmit"
   },
