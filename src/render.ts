@@ -2,7 +2,7 @@ import type { Year } from './worker';
 
 const BP_MEDIUM = 550;
 const BP_LARGE = 700;
-const BODY_COPY = `Greetings, I am vxyux. A student trying to master the art of code, creative generalist and video-editor. Currently learning Javascript technologies.`;
+const BODY_COPY = `Greetings, I am vxyux. Creative generalist and student trying to master the art of code!`;
 
 interface Props {
   width?: number;
@@ -43,11 +43,11 @@ export const shared = /* css */ `
 		--color-dot-border-light: rgb(0 0 0 / 0.06);
 
 		--color-text-dark: #ff0000;
-		--color-dot-bg-0-dark: #FDEFEC;
-		--color-dot-bg-1-dark: #FFC0B3;
-		--color-dot-bg-2-dark: #FF9883;
-		--color-dot-bg-3-dark: #FF6C4E;
-		--color-dot-bg-4-dark: #FF370E;
+		--color-dot-bg-0-dark: #4A0D00;
+		--color-dot-bg-1-dark: #741500;
+		--color-dot-bg-2-dark: #A61E00;
+		--color-dot-bg-3-dark: #CE2500;
+		--color-dot-bg-4-dark: #F82D00;
 		--color-dot-border-dark: rgb(0 0 0 / 0.06);
 
 		/* Initial animation offset... */
@@ -106,7 +106,7 @@ export const shared = /* css */ `
 		color: var(--color-text);
 	}
 
-	/* Hide everything in Firefox by default – show fallback instead */
+	/* Hide everything in Firefox by default show fallback instead */
 	@-moz-document url-prefix() {
 		.wrapper {
 			display: none;
