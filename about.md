@@ -3,7 +3,7 @@
 A website inside an SVG, inside an image, inside HTML, inside markdown, inside a GitHub readme.md.
 
 > [!WARNING]
-> This is all very experimental and may break any time.
+> This is all very experimental and may break any time!
 
 ## Development
 
