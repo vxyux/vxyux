@@ -34,7 +34,7 @@ jobs:
       - name: Fetch Stats
         run: npm run-script stats
         env:
-          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB  }}
 
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
