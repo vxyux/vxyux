@@ -7,7 +7,7 @@
     "start": "wrangler dev",
     "deploy": "pnpm stats && wrangler deploy",
     "format": "prettier --write ./{src,scripts}/*",
-    "stats": "ts-node-esm scripts/stats.ts",
+    "stats": "node --no-warnings=ExperimentalWarning --loader ts-node/esm scripts/stats.ts",
     "lint": "prettier --check ./{src,scripts}/*",
     "types": "tsc --noEmit",
     "build": "wrangler deploy"
