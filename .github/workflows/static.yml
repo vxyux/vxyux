@@ -10,7 +10,7 @@ on:
     - cron: '0 0,12 * * *'
 
 jobs:
-  run-pnpm-script:
+  run-npm-script:
     runs-on: ubuntu-latest
 
     steps:
