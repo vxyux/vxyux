@@ -30,7 +30,7 @@ const worker: ExportedHandler = {
       content = link({ height: 18, width: 100, index, theme })('Instagram');
     } else if (section === 'link-linkedin') {
       const index = Number(searchParams.get('i')) ?? 0;
-      content = link({ height: 18, width: 100, index, theme })('Linkedin');
+      content = link({ height: 18, width: 100, index, theme })('LinkedIn');
     } else if (section == 'fallback') {
       content = fallback({ height: 180, width: 420, theme });
     } else {
