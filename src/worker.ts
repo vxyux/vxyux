@@ -7,7 +7,7 @@ export type Year = {
   days: number[];
 };
 
-const MAX_YEARS = 3;
+const MAX_YEARS = 2;
 
 const worker: ExportedHandler = {
   async fetch(request, env, ctx) {

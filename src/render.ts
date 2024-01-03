@@ -324,7 +324,8 @@ export const main = (props: Props & Main) => {
     });
 
   const date = (i: number) =>
-    i == 0 ? format(new Date()) : new Date(props.years[i].from).getFullYear();
+    i == 0 ? i < 30 ? "" : format(new Date()) : new Date(props.years[i].from).getFullYear();
+
 
   const days = (days: Year['days']) =>
     days.map((level) => `<div class="dot dot--${level}"></div>`).join('');
@@ -340,14 +341,16 @@ export const main = (props: Props & Main) => {
 				<div class="years" style="--w: ${props.length}; --h: ${props.sizes[0][1]};">
 					${props.years
             .map(
-              (year, i) => /* html */ `
+              (year, i) => /* html */
+          `
 						<div class="year year--${i}" style="--w: ${props.sizes[i][0]}; --h: ${props.sizes[i][1]};">
 							<div class="year__days">${days(year.days)}</div>
-							<div class="year__label label"><span>${date(i)}</span></div>
+							<div class="year__label label"><span>${ date(i)}</span></div>
 						</div>
 					`
             )
-            .join('')}
+            .join('')
+          }
 				</div>
 			</article>
 		</main>
